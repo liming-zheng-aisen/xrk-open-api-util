@@ -29,6 +29,7 @@
        AllowDownOrder ：用户下单前，向日葵平台会向第三方平台发送订单拦截请求，询问是否允许该用户下单
        SyncOrder ： 同步订单数据，下单成功后，自动同步订单给第三方平台，实时同步
        OpenApiSdk：开发平台的SDK，用途：鉴权、数据签名
+       ApiResponse：响应请求信息
 
     util包：
        JsonUtil ： JSON工具类
