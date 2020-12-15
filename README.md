@@ -1,24 +1,24 @@
 # xrk-open-api-util 是向日葵妈妈鉴权SDK工具包
 
 ## 环境说明
-`JDK 1.8+
-依赖fastjson`
+### JDK 1.8+
+### 依赖fastjson`
 
 ## 快速使用（三步快速接入）
 
 ### 【step01】拉取代码
 
-    `git clone https://github.com/1308404897/xrk-open-api-util.git`
+    git clone https://github.com/1308404897/xrk-open-api-util.git
    
 ### 【step02】参考Demo里面的示例，试着运行案例
-           `//模拟鉴权-【成功】
+           //模拟鉴权-【成功】
              accessSuccess();
     
             //模拟鉴权-【失败】-【请求超时】
             //accessFailByTimeOut();
     
             //模拟鉴权-【失败】-【恶意请求】
-            //accessFailByBadRequest();`
+            //accessFailByBadRequest();
 
     
 ### 【step03】将openapi包和util包下面的类拷贝到自己的工程，开发自己的业务，以下是主要的类说明
