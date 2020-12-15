@@ -18,13 +18,13 @@ public class Demo {
 
     public static void main( String[] args ) {
         //模拟鉴权-【成功】
-        //accessSuccess();
+        accessSuccess();
 
         //模拟鉴权-【失败】-【请求超时】
         //accessFailByTimeOut();
 
         //模拟鉴权-【失败】-【恶意请求】
-        accessFailByBadRequest();
+        //accessFailByBadRequest();
     }
 
     /**

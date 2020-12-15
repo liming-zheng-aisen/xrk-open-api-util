@@ -1,12 +1,14 @@
 package com.xrkmm.openapi.data.base;
 
+import java.io.Serializable;
+
 /**
  * @Desc 基础数据
  * @Author LiMing.Zheng
  * @Email 1308404897@qq.com
  * @Date 2020/12/15
  */
-public class BaseAccessData {
+public class BaseAccessData implements Serializable {
     /**时间戳，单位秒,允许客户端请求时间误差为10分钟*/
     protected Long time;
     /**签名*/
