@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 public class ApiResponse implements Serializable {
     /**
-     * 错误原因，用途，方便追查数据过程发送异常的事件
+     * 错误原因，用途，方便开发人员追查数据过程发送异常的错误原因
      */
     private String errorCause;
     /**
