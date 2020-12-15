@@ -13,14 +13,43 @@
    
 ### 【step02】参考Demo里面的示例，试着运行案例
 
-            //模拟鉴权-【成功】
-             accessSuccess();
-    
-            //模拟鉴权-【失败】-【请求超时】
-            //accessFailByTimeOut();
-    
-            //模拟鉴权-【失败】-【恶意请求】
-            //accessFailByBadRequest();
+             /**
+                 * 模拟【下单拦截接口】
+                 * @param allowDownOrder
+                 * @return
+                 */
+                public static ApiResponse isAllowDownOrder(AllowDownOrder allowDownOrder){
+                    try {
+                        if (OpenApiSdk.isAccess(JsonUtil.parseObjectToMap(allowDownOrder),appKey)){
+                            //TODO 写自己的业务，判断是否允许下单
+                            //...............
+                            return ApiResponse.ok();
+                        }else {
+                            return ApiResponse.error(30001,"鉴权失败，超时或密钥过时","请稍等重试～");
+                        }
+                    }catch (Exception e){
+                        return ApiResponse.error(40004,e.getMessage(),"哦豁，服务器开小差了～");
+                    }
+                }
+            
+                /**
+                 * 模拟【订单同步】
+                 * @param syncOrder
+                 * @return
+                 */
+                public static ApiResponse syncOrder(SyncOrder syncOrder){
+                    try {
+                        if (OpenApiSdk.isAccess(JsonUtil.parseObjectToMap(syncOrder),appKey)){
+                            //TODO 写自己的业务,同步订单
+                            //...............
+                            return ApiResponse.ok();
+                        }else {
+                            return ApiResponse.error(30001,"鉴权失败，超时或密钥过时",null);
+                        }
+                    }catch (Exception e){
+                        return ApiResponse.error(40004,e.getMessage(),null);
+                    }
+                }
 
     
 ### 【step03】将openapi包和util包下面的类拷贝到自己的工程，开发自己的业务，以下是主要的类说明
