@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @Email 1308404897@qq.com
  * @Date 2020/12/15
  */
-public class ApiResponse<T> implements Serializable {
+public class ApiResponse implements Serializable {
     /**
      * 错误原因，用途，方便追查数据过程发送异常的事件
      */
