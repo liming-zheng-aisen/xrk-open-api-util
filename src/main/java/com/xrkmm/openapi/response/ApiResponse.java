@@ -32,7 +32,7 @@ public class ApiResponse implements Serializable {
         ApiResponse apiResponse = new ApiResponse();
         apiResponse.setCode(code);
         apiResponse.setErrorCause(errorCause);
-        apiResponse.setErrorCause(friendlyMessage);
+        apiResponse.setFriendlyMessage(friendlyMessage);
         return apiResponse;
     }
 
