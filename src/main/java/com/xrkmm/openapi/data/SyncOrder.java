@@ -38,7 +38,7 @@ public class SyncOrder extends BaseAccessData {
      */
     public String name = "";
     /**
-     * 省
+     * 省份
      */
     public String contactProvince = "";
     /**
