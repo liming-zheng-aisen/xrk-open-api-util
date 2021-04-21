@@ -12,7 +12,7 @@ import java.util.Map;
 public class OpenApiSdk {
 
     /**超时时间默认十分钟*/
-    private static final Integer OUT_TIME = 5000*10 * 60;
+    private static final Integer OUT_TIME = 10 * 60;
 
     /***
      * 【请求信息鉴权】

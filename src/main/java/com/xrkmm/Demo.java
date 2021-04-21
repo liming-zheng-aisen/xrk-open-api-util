@@ -77,6 +77,7 @@ public class Demo {
      */
     public static AllowDownOrder initAllowDownOrder(){
         AllowDownOrder allow = new AllowDownOrder();
+        allow.setMobileArea("86");
         allow.setMobile("15219264467");
         allow.setSkuNo("RXG100001");
         allow.setSkuName("数学S1");
@@ -92,6 +93,7 @@ public class Demo {
      */
     public static AllowDownOrder initAllowDownOrderOutTime(){
         AllowDownOrder allow = new AllowDownOrder();
+        allow.setMobileArea("86");
         allow.setMobile("15219264467");
         allow.setSkuNo("RXG100001");
         allow.setSkuName("数学S1");
@@ -108,6 +110,7 @@ public class Demo {
      */
     public static AllowDownOrder initAllowDownOrderBadRequest(){
         AllowDownOrder allow = new AllowDownOrder();
+        allow.setMobileArea("86");
         allow.setMobile("15219264467");
         allow.setSkuNo("RXG100001");
         allow.setSkuName("数学S1");
