@@ -27,9 +27,7 @@ public class SignUtil {
         List<String> keyList = map.keySet().stream().sorted().collect(Collectors.toList());
         keyList.forEach(k -> {
             if (!DEFAULT_SIGN_NAME.equals(k)) {
-                if (isEmpty(map.get(k))) {
-                    sb.append(k).append("=").append("&");
-                } else {
+                if (!isEmpty(map.get(k))) {
                     sb.append(k).append("=").append(map.get(k)).append("&");
                 }
             }
